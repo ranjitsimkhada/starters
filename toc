@@ -1,0 +1,16 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+{:download: .download}
+
+{: .toc subcollection="starters" audience="platform" href="/docs/starters/install_cli.html" path="starters"}
+IBM Cloud starters
+
+    {: .navgroup id="howto"}
+    deploy_eclipsetools.md
+    deploy_vs.md
+    event_driven_cli.md
+    install_cli.md
+    Node-RED/nodered.md
+    Node-RED/start_nodered.md
+    toolchains.md
+    {: .navgroup-end}
