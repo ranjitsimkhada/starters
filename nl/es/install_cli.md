@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 Utilice la interfaz de línea de mandatos de {{site.data.keyword.Bluemix_notm}} para descargar, modificar y volver a desplegar aplicaciones e instancias de servicio de Cloud Foundry.
 {:shortdesc}
 
-Antes de empezar, descargue e instale la CLI de {{site.data.keyword.Bluemix_notm}} [](/docs/cli/index.html#overview){: new_window} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")
+Antes de empezar, descargue e instale la [CLI](/docs/cli/index.html#overview){: new_window} de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")
 
 **Restricción:** La herramienta de línea de mandatos no se admite en Cygwin. Utilice la herramienta en una ventana de línea de mandatos que no sea la ventana de Cygwin.
 {:prereq}
@@ -44,7 +44,7 @@ Tras instalar la interfaz de línea de mandatos, ya puede empezar:
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="(Se abre en un nuevo separador o ventana)"><img class="image" src="images/btn_starter-code.svg" alt="Descargar código de aplicación" /> </a>
 
-      **Nota**: Aumente la versión del nodo a `8.9.x` o a la más reciente en el archivo `package.json` antes de continuar.
+      **Nota**: actualice la versión del nodo a `8.9.x` o a la más reciente en el archivo `package.json` antes de continuar.
 
   2. Cambie al directorio donde se encuentra el código.
 
@@ -63,17 +63,17 @@ asignación de memoria, el número de instancias y otros parámetros cruciales. 
 
   4. Conecte e inicie una sesión en {{site.data.keyword.Bluemix_notm}}.
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">NombreDominio</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">NombreDominio</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">nombre_usuario</var> -o <var class="keyword varname" data-hd-keyref="org_name">nombre_organización</var> -s <var class="keyword varname" data-hd-keyref="space_name">nombre_espacio</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">nombre_usuario</var> -o <var class="keyword varname" data-hd-keyref="org_name">nombre_organización</var> -s <var class="keyword varname" data-hd-keyref="space_name">nombre_espacio</var></code></pre>
 
   Si está utilizando un ID federado, utilice la opción `-sso`.
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">nombre_organización</var> -s <var class="keyword varname" data-hd-keyref="space_name">nombre_espacio</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">nombre_organización</var> -s <var class="keyword varname" data-hd-keyref="space_name">nombre_espacio</var> -sso</code></pre>
 
   **Nota**: Debe añadir comillas simples o dobles alrededor de `nombre de usuario`, `nombre_org` y `nombre_espacio` si el valor contiene un espacio, por ejemplo, `-o "my org"`.
 
-  5. Desde <var class="keyword varname">nuevo_directorio</var>, vuelva a desplegar la app en {{site.data.keyword.Bluemix_notm}} mediante el mandato `bluemix app push`. Para obtener más información sobre el mandato `bx app push`, consulte [Carga de una aplicación](/docs/starters/upload_app.html).
+  5. Desde <var class="keyword varname">nuevo_directorio</var>, vuelva a desplegar la app en {{site.data.keyword.Bluemix_notm}} mediante el mandato `ibmcloud app push`. Para obtener más información sobre el mandato `ibmcloud app push`, consulte [Carga de una aplicación](/docs/starters/upload_app.html).
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">nombre_app</var></code></pre>
 

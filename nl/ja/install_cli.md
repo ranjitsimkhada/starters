@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 {{site.data.keyword.Bluemix_notm}} コマンド・ライン・インターフェースを使用して、Cloud Foundry アプリケーションとサービス・インスタンスをダウンロード、変更、および再デプロイします。
 {:shortdesc}
 
-開始する前に、{{site.data.keyword.Bluemix_notm}} [CLI](/docs/cli/index.html#overview){: new_window} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン") をダウンロードしてインストールします。
+開始する前に、{{site.data.keyword.Bluemix_notm}} [CLI](/docs/cli/index.html#overview){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") をダウンロードしてインストールします。
 
 **制約事項:** コマンド・ライン・ツールは Cygwin ではサポートされていません。 このツールは Cygwin コマンド・ライン・ウィンドウ以外のコマンド・ライン・ウィンドウで使用してください。
 {:prereq}
@@ -44,7 +44,7 @@ lastupdated: "2018-05-24"
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="(新規タブまたはウィンドウで開きます)"><img class="image" src="images/btn_starter-code.svg" alt="アプリケーション・コードのダウンロード" /> </a>
 
-      **注:** 処理を進める前に、ノードのバージョンを `8.9.x` または `package.json` ファイル内の最新のものに上げてください。
+      **注:** 進める前に、ノードのバージョンを `8.9.x` または `package.json` ファイル内の最新のものに更新してください。
 
   2. コードが置かれているディレクトリーに移動します。
 
@@ -60,17 +60,17 @@ lastupdated: "2018-05-24"
 
   4. {{site.data.keyword.Bluemix_notm}} に接続し、ログインします。
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
 
   フェデレーテッド ID を使用する場合は、`-sso` オプションを使用してください。
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
 
   **注**: `username`、`org_name`、および `space_name` の値にスペースが含まれている場合は、値のまわりに単一引用符または二重引用符を追加する必要があります。例えば、`-o "my org"` のように指定します。
 
-  5. `bluemix app push` コマンドを使用して、<var class="keyword varname">your_new_directory</var> からアプリを {{site.data.keyword.Bluemix_notm}} に再デプロイします。 `bx app push` コマンドについて詳しくは、『[アプリケーションのアップロード](/docs/starters/upload_app.html)』を参照してください。
+  5. `ibmcloud app push` コマンドを使用して、<var class="keyword varname">your_new_directory</var> からアプリを {{site.data.keyword.Bluemix_notm}} に再デプロイします。 `ibmcloud app push` コマンドについて詳しくは、『[アプリケーションのアップロード](/docs/starters/upload_app.html)』を参照してください。
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">app_name</var></code></pre>
 
