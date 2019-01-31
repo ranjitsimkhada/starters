@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 Utilizza l'interfaccia riga di comando {{site.data.keyword.Bluemix_notm}} per scaricare, modificare e ridistribuire le tue istanze del servizio e applicazioni Cloud Foundry.
 {:shortdesc}
 
-Prima di iniziare, scarica e installa la {{site.data.keyword.Bluemix_notm}} [CLI](/docs/cli/index.html#overview){: new_window}  ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")
+Prima di iniziare, scarica e installa la [CLI](/docs/cli/index.html#overview){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") {{site.data.keyword.Bluemix_notm}}
 
 **Limitazione:** lo strumento della riga di comando non è supportato da Cygwin. Utilizzalo in una finestra della riga di comando diversa da quella di Cygwin.
 {:prereq}
@@ -44,7 +44,7 @@ Dopo aver installato l'interfaccia riga di comando, puoi iniziare:
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="(si apre in una nuova scheda o finestra)"><img class="image" src="images/btn_starter-code.svg" alt="Scarica il codice dell'applicazione" /> </a>
 
-      **Nota**: prima di procedere, aggiorna la versione del nodo a `8.9.x` o a quella più recente nel file `package.json`.
+      **Nota**: prima di procedere, aggiorna la versione del nodo a `8.9.x` o alla versione più recente nel file `package.json`.
 
   2. Passa alla directory in cui si trova il codice.
 
@@ -60,17 +60,17 @@ Dopo aver installato l'interfaccia riga di comando, puoi iniziare:
 
   4. Collegati ed accedi a {{site.data.keyword.Bluemix_notm}}.
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">nomeutente</var> -o <var class="keyword varname" data-hd-keyref="org_name">nome_org</var> -s <var class="keyword varname" data-hd-keyref="space_name">nome_spazio</var></code></pre>
 
   Se stai utilizzando un ID federato, usa l'opzione `-sso`.
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">nome_org</var> -s <var class="keyword varname" data-hd-keyref="space_name">nome_spazio</var> -sso</code></pre>
 
   **Nota**: devi aggiungere singoli o doppi apostrofi intorno a `nomeutente`, `nome_org` e  `nome_spazio` se il valore contiene uno spazio, ad esempio, `-o "my org"`.
 
-  5. Da <var class="keyword varname">la_tua_nuova_directory</var>, ridistribuisci la tua applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando il comando `bluemix app push`. Per ulteriori informazioni sul comando `bx app push`, vedi [Caricamento della tua applicazione](/docs/starters/upload_app.html).
+  5. Da <var class="keyword varname">la_tua_nuova_directory</var>, ridistribuisci la tua applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando il comando `ibmcloud app push`. Per ulteriori informazioni sul comando `ibmcloud app push`, vedi [Caricamento della tua applicazione](/docs/starters/upload_app.html).
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">nome_app</var></code></pre>
 

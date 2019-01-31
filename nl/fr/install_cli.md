@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 Utilisez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} pour télécharger, modifier et redéployer vos applications et instances de service Cloud Foundry.
 {:shortdesc}
 
-Avant de commencer, téléchargez et installez l'[interface CLI](/docs/cli/index.html#overview){: new_window} {{site.data.keyword.Bluemix_notm}}. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")
+Avant de commencer, téléchargez et installez l'interface de ligne de commande (CLI) {{site.data.keyword.Bluemix_notm}} [](/docs/cli/index.html#overview){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
 
 **Restriction :** l'outil de ligne de commande n'est pas pris en charge par Cygwin. Utilisez-le dans une fenêtre de ligne de commande autre que Cygwin.
 {:prereq}
@@ -44,11 +44,11 @@ Une fois l'interface de ligne de commande installée, vous pouvez commencer :
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="(Ouverture dans un nouvel onglet ou une nouvelle fenêtre)"><img class="image" src="images/btn_starter-code.svg" alt="Télécharger le code de l'application" /> </a>
 
-      **Remarque **: élevez la version de noeud à `8.9.x` (ou la version plus récente) dans le fichier `package.json` avant de continuer.
+      **Remarque** : mettez à jour le noeud vers la version `8.9.x` (ou la dernière version disponible) dans le fichier `package.json` avant de continuer.
 
   2. Placez-vous dans le répertoire dans lequel se trouve votre code.
 
-  <pre class="pre"><code class="hljs">cd <var class="keyword varname">votre_nouveau_répertoire</var></code></pre>
+  <pre class="pre"><code class="hljs">cd <var class="keyword varname">your_new_directory</var></code></pre>
 
   3.  Modifiez le code de votre application si nécessaire. Par exemple, si vous utilisez une application exemple {{site.data.keyword.Bluemix}} et qu'elle contient le fichier `src/main/webapp/index.html`, vous pouvez le modifier et éditer "Thanks for creating ..." pour indiquer un nouveau contenu. Vérifiez que l'application s'exécute en local avant de la déployer à nouveau dans {{site.data.keyword.Bluemix_notm}}.
 
@@ -62,17 +62,17 @@ documentation Cloud Foundry.
 
   4. Connectez-vous à {{site.data.keyword.Bluemix_notm}}.
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">nom_domaine</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">nom_utilisateur</var> -o <var class="keyword varname" data-hd-keyref="org_name">nom_org</var> -s <var class="keyword varname" data-hd-keyref="space_name">nom_espace</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
 
   Si vous vous servez d'un ID fédéré, utilisez l'option `-sso`.
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
 
   **Remarque **: vous devez ajouter des apostrophes ou des guillemets autour de `username`, `org_name` et `space_name`, si cette valeur contient un espace. Par exemple, `-o "my org"`.
 
-  5. A partir de <var class="keyword varname">votre_nouveau_répertoire</var>, redéployez votre application dans {{site.data.keyword.Bluemix_notm}} à l'aide de la commande `bluemix app push`. Pour plus d'informations sur la commande `bx app push`, voir [Téléchargement de votre application](/docs/starters/upload_app.html).
+  5. A partir de <var class="keyword varname">votre_nouveau_répertoire</var>, redéployez votre application dans {{site.data.keyword.Bluemix_notm}} à l'aide de la commande `ibmcloud app push`. Pour plus d'informations sur la commande `ibmcloud app push`, voir [Téléchargement de votre application](/docs/starters/upload_app.html).
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">nom_app</var></code></pre>
 
