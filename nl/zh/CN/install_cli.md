@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 使用 {{site.data.keyword.Bluemix_notm}} 命令行界面下载、修改和重新部署 Cloud Foundry 应用程序与服务实例。
 {:shortdesc}
 
-开始之前，请下载并安装 {{site.data.keyword.Bluemix_notm}} [CLI](/docs/cli/index.html#overview){: new_window} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")
+开始之前，请下载并安装 {{site.data.keyword.Bluemix_notm}} [CLI](/docs/cli/index.html#overview){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")
 
 **限制：**Cygwin 不支持命令行工具。请在非 Cygwin 的命令行窗口中使用命令行工具。
 {:prereq}
@@ -44,7 +44,7 @@ lastupdated: "2018-05-24"
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="（在新选项卡或窗口中打开）"><img class="image" src="images/btn_starter-code.svg" alt="下载应用程序代码" /></a>
 
-      **注**：在继续之前，请在 `package.json` 文件中将节点版本升级到 `8.9.x` 或最新版本。
+      **注**：在继续之前，请在 `package.json` 文件中将节点版本更新到 `8.9.x` 或最新版本。
 
   2. 切换到代码所在的目录。
 
@@ -60,17 +60,17 @@ lastupdated: "2018-05-24"
 
   4. 连接并登录到 {{site.data.keyword.Bluemix_notm}}。
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></code></pre>
 
   如果使用的是联合标识，请使用 `-sso` 选项。
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var> -sso</code></pre>
 
   **注**：如果 `username`、`org_name` 和 `space_name` 的值包含空格，那么必须用单引号或双引号将其括起，例如 `-o "my org"`。
 
-  5. 在 <var class="keyword varname">your_new_directory</var> 中，使用 `bluemix app push` 命令将应用程序重新部署到 {{site.data.keyword.Bluemix_notm}}。有关 `bluemix app push` 命令的更多信息，请参阅[上传应用程序](/docs/starters/upload_app.html)。
+  5. 在 <var class="keyword varname">your_new_directory</var> 中，使用 `ibmcloud app push` 命令将应用程序重新部署到 {{site.data.keyword.Bluemix_notm}}。有关 `ibmcloud app push` 命令的更多信息，请参阅[上传应用程序](/docs/starters/upload_app.html)。
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">app_name</var></code></pre>
 

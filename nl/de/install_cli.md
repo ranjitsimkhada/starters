@@ -33,7 +33,7 @@ lastupdated: "2018-05-24"
 Verwenden Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle, um Ihre Cloud Foundry-Anwendungen und -Serviceinstanzen herunterzuladen, zu ändern und erneut bereitzustellen.
 {:shortdesc}
 
-Laden Sie zunächst die [Befehlszeilenschnittstelle (CLI)](/docs/cli/index.html#overview){: new_window} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link") für {{site.data.keyword.Bluemix_notm}} herunter und installieren Sie sie.
+Bevor Sie beginnen, laden Sie zunächst die {{site.data.keyword.Bluemix_notm}}-[CLI](/docs/cli/index.html#overview){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") herunter und installieren Sie sie.
 
 **Einschränkung:** Das Befehlszeilentool wird von Cygwin nicht unterstützt. Verwenden Sie das Tool in einem anderen Befehlszeilenfenster als dem Cygwin-Befehlszeilenfenster.
 {:prereq}
@@ -44,7 +44,7 @@ Nach der Installation der Befehlszeilenschnittstelle können Sie beginnen:
 
     <a class="xref" href="http://bluemix.net" target="_blank" title="(Wird in einer neuen Registerkarte oder in einem neuen Fenster geöffnet)"><img class="image" src="images/btn_starter-code.svg" alt="Anwendungscode herunterladen" /> </a>
 
-      **Hinweis**: Bevor Sie fortfahren, bringen Sie den Versionsstand des Knotens auf Version `8.9.x` oder auf die neueste Version in der Datei `package.json`.
+      **Hinweis**: Bevor Sie fortfahren, aktualisieren Sie den Knoten auf Version `8.9.x` oder auf die neueste Version in der Datei `package.json`.
 
   2. Wechseln Sie in das Verzeichnis, in dem sich Ihr Code befindet.
 
@@ -60,17 +60,17 @@ Nach der Installation der Befehlszeilenschnittstelle können Sie beginnen:
 
   4. Stellen Sie eine Verbindung zu {{site.data.keyword.Bluemix_notm}} her und melden Sie sich an.
 
-  <pre class="pre"><code class="hljs">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">Domänenname</span></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud api https://api.<span class="keyword" data-hd-keyref="DomainName">Domänenname</span></code></pre>
 
-  <pre class="pre"><code class="hljs">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">Benutzername</var> -o <var class="keyword varname" data-hd-keyref="org_name">Organisationsname</var> -s <var class="keyword varname" data-hd-keyref="space_name">Bereichsname</var></code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login -u <var class="keyword varname" data-hd-keyref="user_ID">Benutzername</var> -o <var class="keyword varname" data-hd-keyref="org_name">Organisationsname</var> -s <var class="keyword varname" data-hd-keyref="space_name">Bereichsname</var></code></pre>
 
-  Wenn Sie eine eingebundene ID nutzen, verwenden Sie die Option `-sso`.
+  Wenn Sie eine föderierte ID nutzen, verwenden Sie die Option `-sso`.
 
-  <pre class="pre"><code class="hljs">bluemix login  -o <var class="keyword varname" data-hd-keyref="org_name">Organisationsname</var> -s <var class="keyword varname" data-hd-keyref="space_name">Bereichsname</var> -sso</code></pre>
+  <pre class="pre"><code class="hljs">ibmcloud login  -o <var class="keyword varname" data-hd-keyref="org_name">Organisationsname</var> -s <var class="keyword varname" data-hd-keyref="space_name">Bereichsname</var> -sso</code></pre>
 
   **Hinweis**: Wenn der Wert ein Leerzeichen enthält, müssen `username`, `org_name` und `space_name` in einfache oder doppelte Anführungszeichen eingeschlossen werden. Beispiel: `-o "my org"`.
 
-  5. Führen Sie unter <var class="keyword varname">neues_Verzeichnis</var> mit dem Befehl `bluemix app push` ein erneutes Staging Ihrer App in {{site.data.keyword.Bluemix_notm}} durch. Weitere Informationen zum Befehl `bx app push` finden Sie unter [Anwendung hochladen](/docs/starters/upload_app.html).
+  5. Führen Sie unter <var class="keyword varname">neues_Verzeichnis</var> mit dem Befehl `ibmcloud app push` die erneute Bereitstellung Ihrer App in {{site.data.keyword.Bluemix_notm}} durch. Weitere Informationen zum Befehl `ibmcloud app push` finden Sie unter [Anwendung hochladen](/docs/starters/upload_app.html).
 
   <pre class="pre"><code class="hljs">bluemix app push <var class="keyword varname" data-hd-keyref="app_name">App-Name</var></code></pre>
 
